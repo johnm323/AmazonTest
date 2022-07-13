@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="com.qa.amazon.extenReportListener.ExtentReporterNG"></listener>
+    </listeners>
+
+    <test name ="Amazon Test">
+        <classes>
+            <class name="com.qa.amazon.testcases.HomePageTest">
+                <methods>
+                    <include name="titleTest"/>
+                    <include name="LogoDisplayed"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
